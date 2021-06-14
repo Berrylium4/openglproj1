@@ -1,0 +1,2309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtApplicationClass</class>
+ <widget class="QMainWindow" name="QtApplicationClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1230</width>
+    <height>1141</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtApplication</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QViewport" name="viewport" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0,0,0)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QGridLayout" name="gridLayout_20">
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame1">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200,200,200)</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="title_model">
+            <property name="text">
+             <string>Current Model : Blend.3DS</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_input_model">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(175,175,175)</string>
+            </property>
+            <property name="text">
+             <string>Change Model</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QFrame" name="frame_3">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200,200,200)</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>Shader</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QComboBox" name="comboBox_Shader">
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+            <property name="currentText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QFrame" name="frame">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200,200,200)</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Model Material</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Ambient</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="Mat_Ambient">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Diffuse</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="Mat_Diffuse">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Specular</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="Mat_Specular">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Shininess</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QSpinBox" name="Mat_Shininess">
+            <property name="maximum">
+             <number>128</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QFrame" name="frame_2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200,200,200)</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_10">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Light 1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QRadioButton" name="Light1_On">
+            <property name="text">
+             <string>Enable</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QRadioButton" name="Light1_Point">
+            <property name="text">
+             <string>Point Light</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QRadioButton" name="Light1_Directional">
+            <property name="text">
+             <string>Directional Light</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QRadioButton" name="Light1_Spotlight">
+            <property name="text">
+             <string>Spotlight</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Position</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" rowspan="2">
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>Ambient</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3" rowspan="2">
+           <widget class="QPushButton" name="Light1_Ambient">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>Spot Direction</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" rowspan="3">
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="Light1_Pos_X">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>25</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>y</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="Light1_Pos_Y">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>z</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="Light1_Pos_Z">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="singleStep">
+               <number>1</number>
+              </property>
+              <property name="value">
+               <number>3</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="4" rowspan="3">
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="Light1_Dir_X">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>-1</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>y</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="Light1_Dir_Y">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>z</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="Light1_Dir_Z">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>-1</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>Diffuse</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QPushButton" name="Light1_Diffuse">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>Specular</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QPushButton" name="Light1_Specular">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" colspan="2">
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Attenuation</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3" rowspan="2" colspan="2">
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_22">
+              <property name="text">
+               <string>Spot Cutoff</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="Light1_Spot_Cutoff">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <double>90.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>45.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_23">
+              <property name="text">
+               <string>Spot Exp</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="Light1_Spot_Exp">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <double>100.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="6" column="0" colspan="3">
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>Constant</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="Light1_Constant">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>1.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>Linear</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" rowspan="2">
+             <widget class="QDoubleSpinBox" name="Light1_Linear">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" rowspan="2">
+             <widget class="QLabel" name="label_21">
+              <property name="text">
+               <string>Quadratic</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QDoubleSpinBox" name="Light1_Quadratic">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QFrame" name="frame_4">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200,200,200)</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_25">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Light 2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QRadioButton" name="Light2_On">
+            <property name="text">
+             <string>Enable</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QRadioButton" name="Light2_Point">
+            <property name="text">
+             <string>Point Light</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QRadioButton" name="Light2_Directional">
+            <property name="text">
+             <string>Directional Light</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QRadioButton" name="Light2_Spotlight">
+            <property name="text">
+             <string>Spotlight</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>Position</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" rowspan="2">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>Ambient</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3" rowspan="2">
+           <widget class="QPushButton" name="Light2_Ambient">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>Spot Direction</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" rowspan="3">
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_29">
+              <property name="text">
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="Light2_Pos_X">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_30">
+              <property name="text">
+               <string>y</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="Light2_Pos_Y">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>25</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_31">
+              <property name="text">
+               <string>z</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="Light2_Pos_Z">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="4" rowspan="3">
+           <layout class="QGridLayout" name="gridLayout_12">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_32">
+              <property name="text">
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="Light2_Dir_X">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>-1</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_33">
+              <property name="text">
+               <string>y</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="Light2_Dir_Y">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_34">
+              <property name="text">
+               <string>z</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="Light2_Dir_Z">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>-1</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_35">
+            <property name="text">
+             <string>Diffuse</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QPushButton" name="Light2_Diffuse">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_36">
+            <property name="text">
+             <string>Specular</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QPushButton" name="Light2_Specular">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" colspan="2">
+           <widget class="QLabel" name="label_37">
+            <property name="text">
+             <string>Attenuation</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3" rowspan="2" colspan="2">
+           <layout class="QGridLayout" name="gridLayout_13">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_38">
+              <property name="text">
+               <string>Spot Cutoff</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="Light2_Spot_Cutoff">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <double>90.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>45.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_39">
+              <property name="text">
+               <string>Spot Exp</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="Light2_Spot_Exp">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <double>100.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="6" column="0" colspan="3">
+           <layout class="QGridLayout" name="gridLayout_14">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_40">
+              <property name="text">
+               <string>Constant</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="Light2_Constant">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>1.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_41">
+              <property name="text">
+               <string>Linear</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" rowspan="2">
+             <widget class="QDoubleSpinBox" name="Light2_Linear">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" rowspan="2">
+             <widget class="QLabel" name="label_42">
+              <property name="text">
+               <string>Quadratic</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QDoubleSpinBox" name="Light2_Quadratic">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QFrame" name="frame_5">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(200,200,200)</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_15">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_43">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Light 3</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QRadioButton" name="Light3_On">
+            <property name="text">
+             <string>Enable</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QRadioButton" name="Light3_Point">
+            <property name="text">
+             <string>Point Light</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QRadioButton" name="Light3_Directional">
+            <property name="text">
+             <string>Directional Light</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="5">
+           <widget class="QRadioButton" name="Light3_Spotlight">
+            <property name="text">
+             <string>Spotlight</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_44">
+            <property name="text">
+             <string>Position</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" rowspan="2">
+           <widget class="QLabel" name="label_45">
+            <property name="text">
+             <string>Ambient</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3" rowspan="2">
+           <widget class="QPushButton" name="Light3_Ambient">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QLabel" name="label_46">
+            <property name="text">
+             <string>Spot Direction</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" rowspan="3">
+           <layout class="QGridLayout" name="gridLayout_16">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_47">
+              <property name="text">
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="Light3_Pos_X">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_48">
+              <property name="text">
+               <string>y</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="Light3_Pos_Y">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_49">
+              <property name="text">
+               <string>z</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="Light3_Pos_Z">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>25</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="4" rowspan="3">
+           <layout class="QGridLayout" name="gridLayout_17">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_50">
+              <property name="text">
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QSpinBox" name="Light3_Dir_X">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>-1</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_51">
+              <property name="text">
+               <string>y</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QSpinBox" name="Light3_Dir_Y">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_52">
+              <property name="text">
+               <string>z</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QSpinBox" name="Light3_Dir_Z">
+              <property name="minimum">
+               <number>-10000</number>
+              </property>
+              <property name="maximum">
+               <number>10000</number>
+              </property>
+              <property name="value">
+               <number>-1</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_53">
+            <property name="text">
+             <string>Diffuse</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QPushButton" name="Light3_Diffuse">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_54">
+            <property name="text">
+             <string>Specular</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QPushButton" name="Light3_Specular">
+            <property name="text">
+             <string>RGB</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" colspan="2">
+           <widget class="QLabel" name="label_55">
+            <property name="text">
+             <string>Attenuation</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3" rowspan="2" colspan="2">
+           <layout class="QGridLayout" name="gridLayout_18">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_56">
+              <property name="text">
+               <string>Spot Cutoff</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="Light3_Spot_Cutoff">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <double>90.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>45.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_57">
+              <property name="text">
+               <string>Spot Exp</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="Light3_Spot_Exp">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <double>100.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="6" column="0" colspan="3">
+           <layout class="QGridLayout" name="gridLayout_19">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_58">
+              <property name="text">
+               <string>Constant</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="Light3_Constant">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>1.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_59">
+              <property name="text">
+               <string>Linear</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" rowspan="2">
+             <widget class="QDoubleSpinBox" name="Light3_Linear">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" rowspan="2">
+             <widget class="QLabel" name="label_60">
+              <property name="text">
+               <string>Quadratic</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QDoubleSpinBox" name="Light3_Quadratic">
+              <property name="decimals">
+               <number>1</number>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1230</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QViewport</class>
+   <extends>QWidget</extends>
+   <header>QViewport.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="QtApplication.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_input_model</sender>
+   <signal>clicked()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>input_model()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Mat_Ambient</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>input_mat_ambient()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Mat_Diffuse</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>input_mat_diffuse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>234</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Mat_Specular</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>input_mat_specular()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>274</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Mat_Shininess</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>input_mat_shininess(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>121</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Pos_X</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_pos_x(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Pos_Y</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_pos_y(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Pos_Z</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_pos_z(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>500</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Ambient</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_ambient()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>267</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Diffuse</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_diffuse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>268</x>
+     <y>459</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Specular</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_specular()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>268</x>
+     <y>494</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_On</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_on(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>198</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Point</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_point(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>350</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Directional</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_direction(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Dir_X</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_dir_x(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>402</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Dir_Y</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_dir_y(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>431</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Dir_Z</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_dir_z(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>460</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Constant</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_constant(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>512</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Linear</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_linear(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Quadratic</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_quadratic(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>571</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Spotlight</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_spot(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>431</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Spot_Cutoff</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_spot_cutoff(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>291</x>
+     <y>501</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light1_Spot_Exp</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights1_spot_exp(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>291</x>
+     <y>531</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_Shader</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>input_shader(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>306</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Spotlight</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_spot(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>594</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Spot_Exp</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_spot_exp(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>800</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Spot_Cutoff</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_spot_cutoff(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>754</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Specular</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_specular()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>704</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Quadratic</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_quadratic(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>819</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Pos_Z</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_pos_z(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>706</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Pos_Y</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_pos_y(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>677</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Pos_X</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_pos_x(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>648</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Point</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_point(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>594</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_On</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_on(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>151</x>
+     <y>594</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Linear</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_linear(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>789</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Directional</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_direction(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>349</x>
+     <y>594</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Dir_Z</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_dir_z(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>706</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Dir_Y</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_dir_y(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>677</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Dir_X</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_dir_x(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>648</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Diffuse</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_diffuse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>669</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Constant</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_constant(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>760</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light2_Ambient</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights2_ambient()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>630</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Spotlight</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_spot(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>864</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Spot_Exp</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_spot_exp(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>1070</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Spot_Cutoff</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_spot_cutoff(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>1024</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Specular</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_specular()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>974</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Quadratic</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_quadratic(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>1089</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Pos_Z</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_pos_z(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>976</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Pos_Y</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_pos_y(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>947</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Pos_X</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_pos_x(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>918</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Point</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_point(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>864</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_On</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_on(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>151</x>
+     <y>864</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Linear</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_linear(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>1059</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Directional</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_direction(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>349</x>
+     <y>864</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Dir_Z</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_dir_z(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>976</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Dir_Y</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_dir_y(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>947</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Dir_X</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_dir_x(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>918</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Diffuse</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_diffuse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>939</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Constant</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_constant(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>1030</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Light3_Ambient</sender>
+   <signal>released()</signal>
+   <receiver>QtApplicationClass</receiver>
+   <slot>lights3_ambient()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>900</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>input_model()</slot>
+  <slot>input_mat_ambient()</slot>
+  <slot>input_mat_diffuse()</slot>
+  <slot>input_mat_specular()</slot>
+  <slot>input_mat_shininess(int)</slot>
+  <slot>lights1_pos_x(int)</slot>
+  <slot>lights1_pos_y(int)</slot>
+  <slot>lights1_pos_z(int)</slot>
+  <slot>lights1_ambient()</slot>
+  <slot>lights1_diffuse()</slot>
+  <slot>lights1_specular()</slot>
+  <slot>lights1_on(bool)</slot>
+  <slot>lights1_point(bool)</slot>
+  <slot>lights1_direction(bool)</slot>
+  <slot>lights1_dir_x(int)</slot>
+  <slot>lights1_dir_y(int)</slot>
+  <slot>lights1_dir_z(int)</slot>
+  <slot>lights1_spot(bool)</slot>
+  <slot>lights1_constant(double)</slot>
+  <slot>lights1_linear(double)</slot>
+  <slot>lights1_quadratic(double)</slot>
+  <slot>lights1_spot_cutoff(double)</slot>
+  <slot>lights1_spot_exp(double)</slot>
+  <slot>input_shader(int)</slot>
+  <slot>lights2_on(bool)</slot>
+  <slot>lights2_pos_x(int)</slot>
+  <slot>lights2_pos_y(int)</slot>
+  <slot>lights2_pos_z(int)</slot>
+  <slot>lights2_ambient()</slot>
+  <slot>lights2_diffuse()</slot>
+  <slot>lights2_specular()</slot>
+  <slot>lights2_point(bool)</slot>
+  <slot>lights2_direction(bool)</slot>
+  <slot>lights2_spot(bool)</slot>
+  <slot>lights2_dir_x(int)</slot>
+  <slot>lights2_dir_y(int)</slot>
+  <slot>lights2_dir_z(int)</slot>
+  <slot>lights2_constant(double)</slot>
+  <slot>lights2_linear(double)</slot>
+  <slot>lights2_quadratic(double)</slot>
+  <slot>lights2_spot_cutoff(double)</slot>
+  <slot>lights2_spot_exp(double)</slot>
+  <slot>input_texture()</slot>
+  <slot>lights3_on(bool)</slot>
+  <slot>lights3_pos_x(int)</slot>
+  <slot>lights3_pos_y(int)</slot>
+  <slot>lights3_pos_z(int)</slot>
+  <slot>lights3_ambient()</slot>
+  <slot>lights3_diffuse()</slot>
+  <slot>lights3_specular()</slot>
+  <slot>lights3_point(bool)</slot>
+  <slot>lights3_direction(bool)</slot>
+  <slot>lights3_spot(bool)</slot>
+  <slot>lights3_dir_x(int)</slot>
+  <slot>lights3_dir_y(int)</slot>
+  <slot>lights3_dir_z(int)</slot>
+  <slot>lights3_constant(double)</slot>
+  <slot>lights3_linear(double)</slot>
+  <slot>lights3_quadratic(double)</slot>
+  <slot>lights3_spot_cutoff(double)</slot>
+  <slot>lights3_spot_exp(double)</slot>
+ </slots>
+</ui>
